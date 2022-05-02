@@ -1,0 +1,17 @@
+{
+  "cSpell.allowCompoundWords": true,
+  "cSpell.words": [
+    "esno",
+    "ohmyfetch",
+    "pnpm"
+  ],
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "./output"
+  ]
+}
