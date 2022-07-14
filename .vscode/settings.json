@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": false,
   "cSpell.allowCompoundWords": true,
   "cSpell.words": [
     "esno",

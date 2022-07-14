@@ -1,9 +1,9 @@
 import c from 'picocolors'
 import { CONFIG, writeJSONToOutput } from './utils'
 import {
-  fetchNPMPackages,
   fetchGitHubRepos,
   fetchGitHubUserInfo,
+  fetchNPMPackages,
 } from './fetchers'
 
 export const npmScript = async () => {
@@ -29,7 +29,7 @@ export const githubScript = async () => {
   })
 }
 
-async function main() {
+async function main () {
   const now = new Date()
   console.log(`Generator started at ${c.cyan(now.toString())}`)
 
