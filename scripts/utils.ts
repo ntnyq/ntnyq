@@ -4,8 +4,7 @@ import { config } from '../package.json'
 
 export const CONFIG = config
 
-export const resolve = (...args: string[]) =>
-  path.resolve(__dirname, `..`, ...args)
+export const resolve = (...args: string[]) => path.resolve(__dirname, `..`, ...args)
 
 export function jsonStringify (data: any) {
   return JSON.stringify(data, null, 2)

@@ -8,7 +8,7 @@ import {
 
 export const npmScript = async () => {
   const [packages] = await Promise.all([fetchNPMPackages(CONFIG.NPM_UID)])
-  console.log(`NPM data: packages: ${c.yellow(packages.length)}`)
+  console.log(`\nNPM data: packages: ${c.yellow(packages.length)}`)
   const now = new Date()
   await writeJSONToOutput(`npm.json`, {
     '//': now.toString(),
@@ -20,7 +20,7 @@ export const githubScript = async () => {
     fetchGitHubRepos(CONFIG.GITHUB_UID),
     fetchGitHubUserInfo(CONFIG.GITHUB_UID),
   ])
-  console.log(`GitHub data: repos: ${c.yellow(repos.length)}`)
+  console.log(`\nGitHub data: repos: ${c.yellow(repos.length)}`)
   const now = new Date()
   await writeJSONToOutput(`github.json`, {
     '//': now.toString(),
@@ -31,14 +31,12 @@ export const githubScript = async () => {
 
 async function main () {
   const now = new Date()
-  console.log(`Generator started at ${c.cyan(now.toString())}`)
+  console.log(`\nGenerator started at ${c.cyan(now.toString())}`)
 
   await npmScript()
   await githubScript()
 
-  console.log()
-  console.log(c.green(`Generated successfully!`))
-  console.log()
+  console.log(c.green(`\nGenerated successfully!`))
 }
 
 try {
