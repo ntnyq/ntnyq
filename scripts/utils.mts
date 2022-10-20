@@ -1,8 +1,11 @@
-import path from 'path'
+import path from 'node:path'
+import { URL, fileURLToPath } from 'node:url'
 import fs from 'fs-extra'
 import { config } from '../package.json'
 
 export const CONFIG = config
+
+const __dirname = fileURLToPath(new URL(`.`, import.meta.url))
 
 export const resolve = (...args: string[]) => path.resolve(__dirname, `..`, ...args)
 

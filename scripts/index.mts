@@ -1,10 +1,11 @@
+import process from 'node:process'
 import c from 'picocolors'
-import { CONFIG, writeJSONToOutput } from './utils'
+import { CONFIG, writeJSONToOutput } from './utils.mjs'
 import {
   fetchGitHubRepos,
   fetchGitHubUserInfo,
   fetchNPMPackages,
-} from './fetchers'
+} from './fetchers.mjs'
 
 export const npmScript = async () => {
   const [packages] = await Promise.all([fetchNPMPackages(CONFIG.NPM_UID)])
