@@ -6,6 +6,8 @@
   </i>
 </h3>
 
+![visitors count](https://visitors-by-url-pls-dont-use-this-in-your-repo.vercel.app/ntnyq-github-readme)
+
 #### About me
 
 - Web developer

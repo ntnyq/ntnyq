@@ -2,7 +2,7 @@
   "name": "ntnyq",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@7.16.1",
+  "packageManager": "pnpm@7.18.1",
   "config": {
     "NPM_UID": "ntnyq",
     "GITHUB_UID": "ntnyq"
@@ -13,16 +13,16 @@
     "prepare:icons": "tsx scripts/prepareIcons.mts"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^1.0.9",
+    "@ntnyq/eslint-config": "^1.2.0",
     "@types/fs-extra": "^9.0.13",
-    "@types/node": "^18.11.9",
-    "eslint": "^8.27.0",
-    "fs-extra": "^10.1.0",
+    "@types/node": "^18.11.12",
+    "eslint": "^8.29.0",
+    "fs-extra": "^11.1.0",
     "ohmyfetch": "^0.4.21",
     "picocolors": "^1.0.0",
-    "pnpm": "^7.16.1",
+    "pnpm": "^7.18.1",
     "super-tiny-icons": "^0.4.0",
     "tsx": "^3.12.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.4"
   }
 }
