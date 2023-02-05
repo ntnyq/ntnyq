@@ -16,11 +16,11 @@
 
 #### Find me
 
-- [Me](https://ntnyq.com)
-- [GitHub](https://github.com/ntnyq)
-- [Twitter](https://twitter.com/ntnyq)
-- [Bilibili](https://space.bilibili.com/40199161)
-- [Juejin](https://juejin.cn/user/1591748566717591)
+[Homepage](https://ntnyq.com) · [GitHub](https://github.com/ntnyq) · [Twitter](https://twitter.com/ntnyq) · [Bilibili](https://space.bilibili.com/40199161) · [Juejin](https://juejin.cn/user/1591748566717591)
+
+#### Skills
+
+![Skills](https://skillicons.dev/icons?i=github,html,js,ts,css,sass,md,regex,bash,git,vscode,flutter,jquery,nodejs,vue)
 
 #### Top languages
 
