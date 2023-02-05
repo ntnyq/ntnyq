@@ -20,7 +20,9 @@
 
 #### Skills
 
-![Skills](https://skillicons.dev/icons?i=github,html,js,ts,css,sass,md,regex,bash,git,vscode,flutter,jquery,nodejs,vue)
+![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,jquery,md,regex,flutter,pug)
+
+![Tools](https://skillicons.dev/icons?i=vscode,nodejs,vite,webpack,rollupjs,gulp,jest,vercel,github,bash,git)
 
 #### Top languages
 
