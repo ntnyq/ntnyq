@@ -30,7 +30,7 @@ export const githubScript = async () => {
   })
 }
 
-async function main () {
+async function main() {
   const now = new Date()
   console.log(`\nGenerator started at ${c.cyan(now.toString())}`)
 

@@ -9,15 +9,15 @@ const __dirname = fileURLToPath(new URL(`.`, import.meta.url))
 
 export const resolve = (...args: string[]) => path.resolve(__dirname, `..`, ...args)
 
-export function jsonStringify (data: any) {
+export function jsonStringify(data: any) {
   return JSON.stringify(data, null, 2)
 }
 
-export async function writeFileToOutput (filename: string, fileContent: string) {
+export async function writeFileToOutput(filename: string, fileContent: string) {
   await fs.ensureDir(resolve(`output`))
   await fs.writeFile(resolve(`output`, filename), fileContent)
 }
 
-export async function writeJSONToOutput (filename: string, data: any) {
+export async function writeJSONToOutput(filename: string, data: any) {
   await writeFileToOutput(filename, jsonStringify(data))
 }
