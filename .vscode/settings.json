@@ -1,20 +1,14 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "cSpell.allowCompoundWords": true,
-  "cSpell.words": [
-    "Bilibili",
-    "esno",
-    "Juejin",
-    "ohmyfetch",
-    "pnpm"
-  ],
+  "cSpell.words": ["Bilibili", "esno", "Juejin", "ofetch", "ohmyfetch", "pnpm"],
   "cSpell.ignorePaths": [
     "package-lock.json",
     "node_modules",
     "vscode-extension",
-    ".git/objects",
-    ".vscode",
-    ".vscode-insiders",
-    "./output"
+    ".git/**",
+    ".vscode/**",
+    ".vscode-insiders/**",
+    "./output/**"
   ]
 }

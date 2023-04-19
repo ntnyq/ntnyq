@@ -2,22 +2,14 @@
   "compilerOptions": {
     "module": "ESNext",
     "target": "ES2020",
-    "lib": [
-      "ESNext"
-    ],
-    "types": [
-      "node"
-    ],
+    "lib": ["ESNext"],
+    "types": ["node"],
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "NodeNext",
     "resolveJsonModule": true
   },
-  "include": [
-    "./scripts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./scripts"],
+  "exclude": ["node_modules"]
 }

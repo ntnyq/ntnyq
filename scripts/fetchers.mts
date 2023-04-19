@@ -1,4 +1,4 @@
-import { $fetch } from 'ohmyfetch'
+import { $fetch } from 'ofetch'
 
 export async function fetchNPMPackages(npmUID: string) {
   const res = await $fetch(`https://registry.npmjs.com/-/v1/search?text=maintainer:${npmUID}`)
