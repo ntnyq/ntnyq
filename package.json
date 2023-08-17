@@ -2,7 +2,7 @@
   "name": "ntnyq",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.3.0",
+  "packageManager": "pnpm@8.6.12",
   "config": {
     "NPM_UID": "ntnyq",
     "GITHUB_UID": "ntnyq"
@@ -10,24 +10,22 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "prepare:icons": "tsx scripts/prepareIcons.mts",
-    "start": "tsx scripts/index.mts",
+    "start": "tsx scripts/index.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^1.7.0",
-    "@ntnyq/prettier-config": "^1.7.0",
+    "@ntnyq/eslint-config": "^1.12.4",
+    "@ntnyq/prettier-config": "^1.12.4",
     "@types/fs-extra": "^11.0.1",
-    "@types/node": "^18.15.11",
-    "eslint": "^8.38.0",
+    "@types/node": "^20.5.0",
+    "eslint": "^8.47.0",
     "fs-extra": "^11.1.1",
-    "ofetch": "^1.0.1",
+    "ofetch": "^1.1.1",
     "picocolors": "^1.0.0",
-    "pnpm": "^8.3.0",
-    "prettier": "^2.8.7",
-    "super-tiny-icons": "^0.5.0",
-    "tsx": "^3.12.6",
-    "typescript": "^5.0.4"
+    "pnpm": "^8.6.12",
+    "prettier": "^3.0.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
   },
   "prettier": "@ntnyq/prettier-config"
 }

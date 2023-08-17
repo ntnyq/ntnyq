@@ -6,11 +6,9 @@ export async function fetchNPMPackages(npmUID: string) {
 }
 
 export async function fetchGitHubUserInfo(githubUID: string) {
-  const res = await $fetch(`https://api.github.com/users/${githubUID}`)
-  return res
+  return await $fetch(`https://api.github.com/users/${githubUID}`)
 }
 
 export async function fetchGitHubRepos(githubUID: string) {
-  const res = await $fetch(`https://api.github.com/users/${githubUID}/repos?per_page=1000`)
-  return res
+  return await $fetch(`https://api.github.com/users/${githubUID}/repos?per_page=1000`)
 }
