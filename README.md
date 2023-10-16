@@ -6,12 +6,11 @@
   </i>
 </h3>
 
-![visitors count](https://visitors-by-url-pls-dont-use-this-in-your-repo.vercel.app/ntnyq-github-readme)
 [![wakatime](https://wakatime.com/badge/user/79d45fbd-b519-4968-925f-64dbdf0f5186.svg)](https://wakatime.com/@79d45fbd-b519-4968-925f-64dbdf0f5186)
 
 #### About me
 
-- Web developer
+- A front-end web developer
 - Current learning [Flutter](https://flutter.dev) and [TypeScript](https://www.typescriptlang.org)
 
 #### Find me
