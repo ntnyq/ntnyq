@@ -14,7 +14,7 @@
     "typescriptreact"
   ],
   "cSpell.allowCompoundWords": true,
-  "cSpell.words": ["Bilibili", "esno", "Juejin", "ofetch", "ohmyfetch", "pnpm"],
+  "cSpell.words": ["Bilibili", "esno", "Juejin", "Nuxt", "ofetch", "ohmyfetch", "pnpm"],
   "cSpell.ignorePaths": [
     "package-lock.json",
     "node_modules",

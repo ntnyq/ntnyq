@@ -11,7 +11,7 @@
 #### About me
 
 - A front-end web developer
-- Current learning [Flutter](https://flutter.dev) and [TypeScript](https://www.typescriptlang.org)
+- Current learning [Nuxt](https://nuxt.com/) and [Flutter](https://flutter.dev)
 
 #### Find me
 
@@ -19,9 +19,9 @@
 
 #### Skills
 
-![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,jquery,md,regex,flutter,pug&theme=light)
+![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,nuxt,jquery,md,regex,flutter,pug&theme=light)
 
-![Tools](https://skillicons.dev/icons?i=vscode,nodejs,vite,webpack,rollupjs,gulp,jest,vercel,github,bash,git&theme=light)
+![Tools](https://skillicons.dev/icons?i=dart,vscode,nodejs,vite,webpack,rollupjs,gulp,jest,vercel,github,bash,git&theme=light)
 
 #### Top languages
 
