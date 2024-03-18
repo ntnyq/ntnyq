@@ -11,7 +11,10 @@
 #### About me
 
 - A front-end web developer
-- Current learning [Nuxt](https://nuxt.com/) and [Flutter](https://flutter.dev)
+- Current learning
+  - [Nuxt](https://nuxt.com/)
+  - [Flutter](https://flutter.dev)
+  - [Rust](https://www.rust-lang.org)
 
 #### Find me
 

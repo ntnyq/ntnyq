@@ -20,6 +20,6 @@ export async function writeFileToOutput(filename: string, fileContent: string) {
   await fs.writeFile(resolve(OUTPUT_DIR, filename), fileContent)
 }
 
-export async function writeJSONToOutput(filename: string, data: any) {
+export async function writeJSONToOutput(filename: string, data: Record<string, any>) {
   await writeFileToOutput(filename, jsonStringify(data))
 }
