@@ -1,6 +1,6 @@
 import path from 'node:path'
 import { URL, fileURLToPath } from 'node:url'
-import fs from 'fs-extra'
+import { access, mkdir, writeFile } from 'node:fs/promises'
 import { config } from '../package.json'
 
 export const CONFIG = config
@@ -16,10 +16,24 @@ export function jsonStringify(data: any) {
 }
 
 export async function writeFileToOutput(filename: string, fileContent: string) {
-  await fs.ensureDir(resolve(OUTPUT_DIR))
-  await fs.writeFile(resolve(OUTPUT_DIR, filename), fileContent)
+  await ensureDir(resolve(OUTPUT_DIR))
+  await writeFile(resolve(OUTPUT_DIR, filename), fileContent)
 }
 
 export async function writeJSONToOutput(filename: string, data: Record<string, any>) {
   await writeFileToOutput(filename, jsonStringify(data))
+}
+
+export async function exists(path: string) {
+  try {
+    await access(path)
+    return true
+  } catch {
+    return false
+  }
+}
+
+export async function ensureDir(path: string) {
+  if (await exists(path)) return
+  await mkdir(path, { recursive: true })
 }

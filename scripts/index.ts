@@ -35,9 +35,7 @@ async function main() {
   console.log(c.green('\nGenerated successfully!'))
 }
 
-try {
-  main()
-} catch (err) {
+await main().catch(err => {
   console.log(c.red('Ops, something is wrong!'), err)
   process.exit(1)
-}
+})
