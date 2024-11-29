@@ -22,9 +22,9 @@
 
 #### Skills
 
-![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,nuxt,jquery,md,regex,flutter,pug&theme=light)
+![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,nuxt,nodejs,jquery,md,pinia,flutter,pug&theme=light)
 
-![Tools](https://skillicons.dev/icons?i=dart,vscode,nodejs,vite,webpack,rollupjs,gulp,jest,vercel,github,bash,git&theme=light)
+![Tools](https://skillicons.dev/icons?i=npm,vscode,vite,webpack,rollupjs,gulp,vitest,vercel,github,bash,git,yarn,pnpm&theme=light)
 
 #### Stats
 

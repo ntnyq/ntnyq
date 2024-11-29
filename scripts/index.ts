@@ -1,7 +1,7 @@
 import process from 'node:process'
 import c from 'picocolors'
-import { CONFIG, writeJSONToOutput } from './utils'
 import { createGitHubApi, createNPMApi } from './api'
+import { CONFIG, writeJSONToOutput } from './utils'
 
 export const npmScript = async () => {
   const api = createNPMApi(CONFIG.NPM_UID)

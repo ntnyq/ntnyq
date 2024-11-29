@@ -1,6 +1,6 @@
-import path from 'node:path'
-import { URL, fileURLToPath } from 'node:url'
 import { access, mkdir, writeFile } from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath, URL } from 'node:url'
 import { config } from '../package.json'
 
 export const CONFIG = config
