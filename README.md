@@ -14,7 +14,6 @@
 - Current learning
   - [Nuxt](https://nuxt.com/)
   - [Flutter](https://flutter.dev)
-  - [Rust](https://www.rust-lang.org)
 
 #### Find me
 

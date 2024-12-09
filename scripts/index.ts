@@ -1,4 +1,5 @@
 import process from 'node:process'
+import { consola } from 'consola'
 import c from 'picocolors'
 import { createGitHubApi, createNPMApi } from './api'
 import { CONFIG, writeJSONToOutput } from './utils'
@@ -6,7 +7,9 @@ import { CONFIG, writeJSONToOutput } from './utils'
 export const npmScript = async () => {
   const api = createNPMApi(CONFIG.NPM_UID)
   const [packages] = await Promise.all([api.getPackages()])
-  console.log(`\nNPM data: packages: ${c.yellow(packages.length)}`)
+
+  consola.info(`NPM data: packages: ${c.yellow(packages.length)}`)
+
   const now = new Date()
   await writeJSONToOutput('npm.json', {
     '//': now.toString(),
@@ -16,7 +19,9 @@ export const npmScript = async () => {
 export const githubScript = async () => {
   const api = createGitHubApi(CONFIG.GITHUB_UID)
   const [repos, userInfo] = await Promise.all([api.getUserRepos(), api.getUser()])
-  console.log(`\nGitHub data: repos: ${c.yellow(repos.length)}`)
+
+  consola.info(`GitHub data: repos: ${c.yellow(repos.length)}`)
+
   const now = new Date()
   await writeJSONToOutput('github.json', {
     '//': now.toString(),
@@ -27,15 +32,16 @@ export const githubScript = async () => {
 
 async function main() {
   const now = new Date()
-  console.log(`\nGenerator started at ${c.cyan(now.toString())}`)
+
+  consola.info(`Generator started at ${c.cyan(now.toLocaleString())}`)
 
   await npmScript()
   await githubScript()
 
-  console.log(c.green('\nGenerated successfully!'))
+  consola.success('Generated successfully!')
 }
 
 await main().catch(err => {
-  console.log(c.red('Ops, something is wrong!'), err)
+  consola.error(c.red('Ops, something is wrong!'), err)
   process.exit(1)
 })
