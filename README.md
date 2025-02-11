@@ -17,7 +17,7 @@
 
 #### Find me
 
-[Homepage](https://ntnyq.com) · [GitHub](https://github.com/ntnyq) · [Twitter](https://twitter.com/ntnyq) · [Bilibili](https://space.bilibili.com/40199161) · [Juejin](https://juejin.cn/user/1591748566717591)
+[Homepage](https://ntnyq.com) · [GitHub](https://github.com/ntnyq) · [Twitter](https://twitter.com/ntnyq) · [Bluesky](https://bsky.app/profile/ntnyq.com) · [Bilibili](https://space.bilibili.com/40199161) · [Juejin](https://juejin.cn/user/1591748566717591) · [Discord](https://discord.com/invite/uB2rgg5s)
 
 #### Skills
 

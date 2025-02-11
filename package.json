@@ -6,7 +6,7 @@
     "GITHUB_UID": "ntnyq"
   },
   "private": true,
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@10.3.0",
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
@@ -15,19 +15,24 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.9.1",
-    "@ntnyq/prettier-config": "^1.22.0",
-    "@types/node": "^22.10.1",
+    "@ntnyq/eslint-config": "^4.0.0-beta.3",
+    "@ntnyq/prettier-config": "^2.0.0-beta.2",
+    "@types/node": "^22.13.1",
     "consola": "^3.2.3",
     "eslint": "^9.16.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
-    "npm-run-all2": "^7.0.1",
+    "npm-run-all2": "^7.0.2",
     "ofetch": "^1.4.1",
     "picocolors": "^1.1.1",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,md,json,yml,yaml}": "eslint --fix"

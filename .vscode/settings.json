@@ -2,10 +2,16 @@
   "eslint.enable": true,
   "prettier.enable": true,
   "editor.formatOnSave": true,
+  "prettier.configPath": "./prettier.config.mjs",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
+    "source.sortImports": "never"
+  },
   "eslint.validate": [
     "vue",
     "yaml",
-    "html",
     "toml",
     "json",
     "jsonc",
@@ -17,14 +23,13 @@
     "typescriptreact"
   ],
   "cSpell.allowCompoundWords": true,
-  "cSpell.words": ["Bilibili", "esno", "Juejin", "Nuxt", "ofetch", "ohmyfetch", "pnpm"],
-  "cSpell.ignorePaths": [
-    "package-lock.json",
-    "node_modules",
-    "vscode-extension",
-    ".git/**",
-    ".vscode/**",
-    ".vscode-insiders/**",
-    "./output/**"
+  "cSpell.words": [
+    "Bilibili",
+    "esno",
+    "Juejin",
+    "Nuxt",
+    "ofetch",
+    "ohmyfetch",
+    "pnpm"
   ]
 }

@@ -18,7 +18,10 @@ export const npmScript = async () => {
 }
 export const githubScript = async () => {
   const api = createGitHubApi(CONFIG.GITHUB_UID)
-  const [repos, userInfo] = await Promise.all([api.getUserRepos(), api.getUser()])
+  const [repos, userInfo] = await Promise.all([
+    api.getUserRepos(),
+    api.getUser(),
+  ])
 
   consola.info(`GitHub data: repos: ${c.yellow(repos.length)}`)
 
