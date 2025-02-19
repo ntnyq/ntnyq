@@ -6,6 +6,12 @@
   </i>
 </h3>
 
+#### Cli
+
+```ts
+npx ntnyq
+```
+
 [![wakatime](https://wakatime.com/badge/user/79d45fbd-b519-4968-925f-64dbdf0f5186.svg)](https://wakatime.com/@79d45fbd-b519-4968-925f-64dbdf0f5186)
 
 #### About me
@@ -21,9 +27,9 @@
 
 #### Skills
 
-![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,nuxt,nodejs,jquery,md,pinia,flutter,pug&theme=light)
+![Languages](https://skillicons.dev/icons?i=html,css,js,ts,sass,vue,nuxt,nodejs,jquery,pinia,md,pug,flutter&theme=light)
 
-![Tools](https://skillicons.dev/icons?i=npm,vscode,vite,webpack,rollupjs,gulp,vitest,vercel,github,bash,git,yarn,pnpm&theme=light)
+![Tools](https://skillicons.dev/icons?i=gulp,webpack,rollupjs,vite,vitest,vscode,git,vercel,github,npm,yarn,pnpm,bun&theme=light)
 
 #### Stats
 

@@ -11,11 +11,11 @@ export function createGitHubApi(uid: string) {
   })
 
   return {
-    async getUser() {
+    async getUser(): Promise<IUser> {
       return await fetch<IUser>(`/users/${uid}`)
     },
 
-    async getUserRepos() {
+    async getUserRepos(): Promise<IRepo[]> {
       return await fetch<IRepo[]>(`/users/${uid}/repos`, {
         params: {
           per_page: 1000,
@@ -31,7 +31,7 @@ export function createNPMApi(uid: string) {
   })
 
   return {
-    async getPackages() {
+    async getPackages(): Promise<IPackage[]> {
       const res = await fetch<{ objects?: IPackage[] }>(`/search`, {
         params: {
           text: `maintainer:${uid}`,

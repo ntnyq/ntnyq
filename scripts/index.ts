@@ -4,7 +4,7 @@ import c from 'picocolors'
 import { createGitHubApi, createNPMApi } from './api'
 import { CONFIG, writeJSONToOutput } from './utils'
 
-export const npmScript = async () => {
+export async function npmScript(): Promise<void> {
   const api = createNPMApi(CONFIG.NPM_UID)
   const [packages] = await Promise.all([api.getPackages()])
 
@@ -16,7 +16,8 @@ export const npmScript = async () => {
     packages,
   })
 }
-export const githubScript = async () => {
+
+export async function githubScript(): Promise<void> {
   const api = createGitHubApi(CONFIG.GITHUB_UID)
   const [repos, userInfo] = await Promise.all([
     api.getUserRepos(),
