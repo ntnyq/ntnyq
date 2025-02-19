@@ -32,7 +32,7 @@ export function createNPMApi(uid: string) {
 
   return {
     async getPackages(): Promise<IPackage[]> {
-      const res = await fetch<{ objects?: IPackage[] }>(`/search`, {
+      const res = await fetch<{ objects?: IPackage[] }>('/search', {
         params: {
           text: `maintainer:${uid}`,
         },

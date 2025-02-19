@@ -25,11 +25,13 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.words": [
     "Bilibili",
+    "esbuild",
     "esno",
     "Juejin",
     "Nuxt",
     "ofetch",
     "ohmyfetch",
-    "pnpm"
+    "pnpm",
+    "unrs"
   ]
 }

@@ -1,16 +1,13 @@
 import { access, mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { fileURLToPath, URL } from 'node:url'
 import { config } from '../package.json'
 
 export const CONFIG: { NPM_UID: string; GITHUB_UID: string } = config
 
 const OUTPUT_DIR = 'output'
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
-
 export function resolve(...args: string[]): string {
-  return path.resolve(__dirname, '..', ...args)
+  return path.resolve(import.meta.dirname, '..', ...args)
 }
 
 export function jsonStringify(data: any): string {
@@ -39,6 +36,8 @@ export async function exists(path: string): Promise<boolean> {
 }
 
 export async function ensureDir(path: string): Promise<void> {
-  if (await exists(path)) return
+  if (await exists(path)) {
+    return
+  }
   await mkdir(path, { recursive: true })
 }
