@@ -12,8 +12,6 @@
 npx ntnyq
 ```
 
-[![wakatime](https://wakatime.com/badge/user/79d45fbd-b519-4968-925f-64dbdf0f5186.svg)](https://wakatime.com/@79d45fbd-b519-4968-925f-64dbdf0f5186)
-
 #### About me
 
 - A front-end web developer
@@ -33,4 +31,11 @@ npx ntnyq
 
 #### Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=ntnyq&show_icons=true&theme=vue&include_all_commits=true&count_private=true" alt="ntnyq's github stats" >
+<picture>
+  <source srcset="https://github-readme-stats.vercel.app/api?username=ntnyq&show_icons=true&include_all_commits=true&count_private=true&theme=dark" media="(prefers-color-scheme: dark)" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ntnyq&show_icons=true&include_all_commits=true&count_private=true&theme=vue" alt="ntnyq's github stats" >
+</picture>
+
+#### WakaTime
+
+[![wakatime](https://wakatime.com/badge/user/79d45fbd-b519-4968-925f-64dbdf0f5186.svg)](https://wakatime.com/@79d45fbd-b519-4968-925f-64dbdf0f5186)
