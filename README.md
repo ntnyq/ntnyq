@@ -39,3 +39,10 @@ npx ntnyq
 #### WakaTime
 
 [![wakatime](https://wakatime.com/badge/user/79d45fbd-b519-4968-925f-64dbdf0f5186.svg)](https://wakatime.com/@79d45fbd-b519-4968-925f-64dbdf0f5186)
+
+#### Steam Card
+
+<picture>
+  <source srcset="https://card.yuy1n.io/card/76561198418257586/dark,en,badge,group" media="(prefers-color-scheme: dark)" />
+  <img src="https://card.yuy1n.io/card/76561198418257586/gradient2,en,badge,group" alt="ntnyq's steam stats" >
+</picture>
