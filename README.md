@@ -8,8 +8,8 @@
 
 #### Cli
 
-```ts
-npx ntnyq
+```shell
+pnpm dlx ntnyq
 ```
 
 #### About me

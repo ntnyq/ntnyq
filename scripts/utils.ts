@@ -14,6 +14,19 @@ export function jsonStringify(data: any): string {
   return JSON.stringify(data, null, 2)
 }
 
+export async function exists(pathOrUrl: string): Promise<boolean> {
+  return access(pathOrUrl)
+    .then(() => true)
+    .catch(() => false)
+}
+
+export async function ensureDir(pathOrUrl: string): Promise<void> {
+  if (await exists(pathOrUrl)) {
+    return
+  }
+  await mkdir(pathOrUrl, { recursive: true })
+}
+
 export async function writeFileToOutput(
   filename: string,
   fileContent: string,
@@ -27,17 +40,4 @@ export async function writeJSONToOutput(
   data: Record<string, any>,
 ): Promise<void> {
   await writeFileToOutput(filename, jsonStringify(data))
-}
-
-export async function exists(path: string): Promise<boolean> {
-  return access(path)
-    .then(() => true)
-    .catch(() => false)
-}
-
-export async function ensureDir(path: string): Promise<void> {
-  if (await exists(path)) {
-    return
-  }
-  await mkdir(path, { recursive: true })
 }

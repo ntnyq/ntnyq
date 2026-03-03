@@ -29,8 +29,8 @@ export async function githubScript(): Promise<void> {
   const now = new Date()
   await writeJSONToOutput('github.json', {
     '//': now.toString(),
-    userInfo,
     repos,
+    userInfo,
   })
 }
 
@@ -45,7 +45,8 @@ async function main() {
   consola.success('Generated successfully!')
 }
 
-await main().catch(err => {
-  consola.error(c.red('Ops, something is wrong!'), err)
+await main().catch(error => {
+  consola.error(c.red('Ops, something is wrong!'), error)
+  // oxlint-disable-next-line unicorn/no-process-exit
   process.exit(1)
 })

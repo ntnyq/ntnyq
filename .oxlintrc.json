@@ -1,0 +1,68 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "eslint",
+    "import",
+    "jsdoc",
+    "node",
+    "promise",
+    "oxc",
+    "typescript",
+    "unicorn"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "pedantic": "warn",
+    "perf": "warn",
+    "style": "warn",
+    "restriction": "warn"
+  },
+  "ignorePatterns": ["**/dist/**", "**/node_modules/**", "**/fixtures/**"],
+  "rules": {
+    "require-await": "off",
+    "sort-imports": "off",
+    "import/exports-last": "off",
+    "import/group-exports": "off",
+    "import/no-named-export": "off",
+    "import/no-relative-parent-imports": "off",
+    "oxc/no-async-await": "off",
+    "promise/prefer-await-to-then": "off",
+    "typescript/no-explicit-any": "off",
+    "typescript/explicit-module-boundary-types": "off",
+    "typescript/explicit-function-return-type": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-single-promise-in-promise-methods": "off",
+    "id-length": [
+      "error",
+      { "min": 2, "exceptions": ["c", "i", "j", "k", "x", "y", "z"] }
+    ],
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignore": [0, 1, -1, 2],
+        "ignoreArrayIndexes": true,
+        "enforceConst": true,
+        "detectObjects": false
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["scripts/**/*.{js,ts}"],
+      "rules": {
+        "import/no-nodejs-modules": "off"
+      }
+    },
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        // to extend existing modules, import/export must not appear in declaration files at top level
+        "import/unambiguous": "off",
+        // we need `export {}` to convert a file to a module
+        "unicorn/require-module-specifiers": "off"
+      }
+    }
+  ]
+}

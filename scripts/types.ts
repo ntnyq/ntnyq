@@ -1,14 +1,20 @@
 /**
  * NPM Package
  */
-export interface IPackage {}
+export interface IPackage {
+  name: string
+}
 
 /**
  * GitHub Repository
  */
-export interface IRepo {}
+export interface IRepo {
+  name: string
+}
 
 /**
  * GitHub User
  */
-export interface IUser {}
+export interface IUser {
+  name: string
+}
