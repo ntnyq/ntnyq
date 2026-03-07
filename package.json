@@ -13,7 +13,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "devDependencies": {
-    "@types/node": "^25.3.3",
+    "@types/node": "^25.3.5",
     "@typescript/native-preview": "7.0.0-dev.20260302.1",
     "consola": "^3.4.2",
     "husky": "^9.1.7",

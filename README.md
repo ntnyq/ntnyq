@@ -32,8 +32,8 @@ pnpm dlx ntnyq
 #### Stats
 
 <picture>
-  <source srcset="https://github-readme-stats.vercel.app/api?username=ntnyq&show_icons=true&include_all_commits=true&count_private=true&theme=dark" media="(prefers-color-scheme: dark)" />
-  <img src="https://github-readme-stats.vercel.app/api?username=ntnyq&show_icons=true&include_all_commits=true&count_private=true&theme=vue" alt="ntnyq's github stats" >
+  <source srcset="./profile/theme-dark.svg" media="(prefers-color-scheme: dark)" />
+  <img src="./profile/theme-vue.svg" alt="ntnyq's github stats" >
 </picture>
 
 #### WakaTime
