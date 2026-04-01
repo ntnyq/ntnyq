@@ -2,10 +2,11 @@ import process from 'node:process'
 import { consola } from 'consola'
 import c from 'picocolors'
 import { createGitHubApi, createNPMApi } from './api'
-import { CONFIG, writeJSONToOutput } from './utils'
+import { GITHUB_USER_ID, NPM_USER_ID } from './constants'
+import { writeJSONToOutput } from './utils'
 
 export async function npmScript(): Promise<void> {
-  const api = createNPMApi(CONFIG.NPM_UID)
+  const api = createNPMApi(NPM_USER_ID)
   const [packages] = await Promise.all([api.getPackages()])
 
   consola.info(`NPM data: packages: ${c.yellow(packages.length)}`)
@@ -18,7 +19,7 @@ export async function npmScript(): Promise<void> {
 }
 
 export async function githubScript(): Promise<void> {
-  const api = createGitHubApi(CONFIG.GITHUB_UID)
+  const api = createGitHubApi(GITHUB_USER_ID)
   const [repos, userInfo] = await Promise.all([
     api.getUserRepos(),
     api.getUser(),

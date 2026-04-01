@@ -1,10 +1,6 @@
 import { access, mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { config } from '../package.json'
-
-export const CONFIG: { NPM_UID: string; GITHUB_UID: string } = config
-
-const OUTPUT_DIR = 'output'
+import { OUTPUT_DIR } from './constants'
 
 export function resolve(...args: string[]): string {
   return path.resolve(import.meta.dirname, '..', ...args)
