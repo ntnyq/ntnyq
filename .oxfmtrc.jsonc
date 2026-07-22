@@ -18,6 +18,7 @@
     "**/*.min.*",
     "**/dist/**",
     "**/fixtures/**",
+    "**/output/**",
   ],
   "insertFinalNewline": true,
   "jsxSingleQuote": true,

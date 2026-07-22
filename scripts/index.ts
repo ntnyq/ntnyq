@@ -1,4 +1,3 @@
-import process from 'node:process'
 import { consola } from 'consola'
 import c from 'picocolors'
 import { createGitHubApi, createNPMApi } from './api'
@@ -46,8 +45,10 @@ async function main() {
   consola.success('Generated successfully!')
 }
 
-await main().catch(error => {
+try {
+  // oxlint-disable-next-line unicorn/prefer-top-level-await
+  main()
+} catch (error) {
   consola.error(c.red('Ops, something is wrong!'), error)
-  // oxlint-disable-next-line unicorn/no-process-exit
-  process.exit(1)
-})
+  throw error
+}
