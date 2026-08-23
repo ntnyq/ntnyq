@@ -38,6 +38,7 @@
       { "min": 2, "exceptions": ["c", "i", "j", "k", "x", "y", "z"] }
     ],
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "one-var": ["error", "never"],
     "no-magic-numbers": [
       "error",
       {
