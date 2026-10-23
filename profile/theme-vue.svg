@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">ntnyq&#39;s GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 297, Total Commits  : 8231, Total PRs: 350, Total Issues: 138, Contributed to (last year): 22</desc>
+        <desc id="descId">Total Stars Earned: 297, Total Commits  : 8237, Total PRs: 351, Total Issues: 138, Contributed to (last year): 22</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 29.962431347143482;
+        stroke-dashoffset: 29.95509473347786;
       }
     }
   
@@ -199,7 +199,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >350</text>
+      >351</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
